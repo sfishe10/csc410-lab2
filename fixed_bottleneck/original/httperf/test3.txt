@@ -1,0 +1,31 @@
+httperf
+*** Running httperf 0.9 patched by DK and RSH ***
+ --client=0/1 --server=44.252.104.243 --rfile-name=/home/ubuntu/engg_533/responsetimes/rfile.txt --port=80 --uri=/ --period=e0.05 --send-buffer=4096 --recv-buffer=16384 --wsesslog=700,0.000,input.txt
+Maximum connect burst length: 2
+
+Total: connections 700 requests 11199 replies 10842 test-duration 35.565 s
+
+Connection rate: 19.7 conn/s (50.8 ms/conn, <=672 concurrent connections)
+Connection time [ms]: min 84.6 avg 9656.0 max 32918.9 median 7546.5 stddev 8380.8
+Connection time [ms]: connect 0.5
+Connection length [replies/conn]: 349.742
+
+Request rate: 314.9 req/s (3.2 ms/req)
+Request size [B]: 105.0
+
+Reply rate [replies/s]: min 83.6 avg 304.4 max 425.2 stddev 127.3 (7 samples)
+Reply time [ms]: response 125.9 transfer 0.0
+Reply size [B]: header 221.0 content 2163.0 footer 0.0 (total 2384.0)
+Reply status: 1xx=0 2xx=10842 3xx=0 4xx=0 5xx=0
+
+CPU time [s]: user 27.25 system 8.31 (user 76.6% system 23.4% total 100.0%)
+Net I/O: 742.3 KB/s (6.1*10^6 bps)
+
+Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+befor print loopEntered the print loop 10842 
+Session rate [sess/s]: min 0.20 avg 0.87 max 1.20 stddev 0.34 (31/31)
+Session: avg 1.00 connections/session
+Session lifetime [s]: 9.7
+Session failtime [s]: 0.0
+Session length histogram: 0 0 1 2 2 0 1 6 5 1 1 0 2 1 0 1 2 0 0 1 0 1 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1

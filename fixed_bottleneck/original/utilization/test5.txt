@@ -1,0 +1,4 @@
+Utilization of core 0 is: 
+74.00
+Utilization of core 1 is: 
+2.11
