@@ -1,0 +1,20 @@
+GET /api/login - Initiates Replit Auth login flow
+GET /api/callback - Handles OAuth callback and creates user session
+GET /api/logout - Destroys session and redirects to home
+GET /api/auth/user - Returns current authenticated user (protected)
+Product Endpoints
+GET /api/products - Lists all products in the catalog
+GET /api/products/:id - Gets a single product by ID
+Order Endpoints
+POST /api/create-payment-intent - Creates a Stripe payment intent and pending order
+Body: { amount, items, customerEmail, customerName }
+Returns: { clientSecret, orderId }
+GET /api/orders/by-payment-intent/:paymentIntentId - Fetches order by Stripe payment intent ID
+PATCH /api/orders/:id - Updates order with customer info and status
+Body: { customerEmail?, customerName?, status? }
+GET /api/orders/:id - Gets a single order by ID
+Stripe Configuration
+GET /api/stripe/public-key - Returns Stripe publishable key for frontend
+Returns: { publicKey }
+Static Assets
+GET /generated_images/* - Serves product images from attached_assets/generated_images/
